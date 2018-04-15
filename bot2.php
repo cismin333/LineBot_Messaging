@@ -494,7 +494,7 @@ if($message['type']=='text') {
     }
 }
 if($message['type']=='text') {
-	    if ($command == '/myinfo') {
+	    if ($command == '/info') {
         $balas = array(
             'replyToken' => $replyToken,
             'messages' => array(
@@ -901,7 +901,7 @@ if($message['type']=='text') {
             'messages' => array(
                 array(
                     'type' => 'text',
-                    'text' => 'HALLO '.$profil->displayName
+                    'text' => 'Hello, '.$profil->displayName
                 )
             )
         );
@@ -915,7 +915,7 @@ if($message['type']=='text') {
             'messages' => array(
                 array(
                     'type' => 'text',
-                    'text' => 'HALLO '.$profil->displayName
+                    'text' => 'Hello, '.$profil->displayName
                 )
             )
         );
@@ -936,13 +936,13 @@ if($message['type']=='text') {
             )
         );
 
-    } else if ($command == '/menu') {
+    } else if ($command == '/Help'|| $command == 'help') {
                     $balas = array(
         'replyToken' => $replyToken,
         'messages' => array(
           array (
   'type' => 'template',
-  'altText' => 'Anda di sebut',
+  'altText' => 'Mention you',
   'template' =>
   array (
     'type' => 'carousel',
@@ -966,7 +966,7 @@ if($message['type']=='text') {
           array (
             'type' => 'message',
             'label' => 'Example',
-            'text' => '/waktu jakarta',
+            'text' => '/waktu medan',
           ),
         ),
       ),
@@ -988,7 +988,7 @@ if($message['type']=='text') {
           array (
             'type' => 'message',
             'label' => 'Example',
-            'text' => '/instagram kamu',
+            'text' => '/instagram mikef.s',
           ),
         ),
       ),
@@ -1032,7 +1032,7 @@ if($message['type']=='text') {
           array (
             'type' => 'message',
             'label' => 'Example',
-            'text' => '/shalat jakarta',
+            'text' => '/shalat medan',
           ),
         ),
       ),
@@ -1120,7 +1120,7 @@ if($message['type']=='text') {
           array (
             'type' => 'message',
             'label' => 'Example',
-            'text' => '/musik amy diamond heartbeat',
+            'text' => '/musik jealous labrinth',
           ),
         ),
       ),
@@ -1142,7 +1142,7 @@ if($message['type']=='text') {
           array (
             'type' => 'message',
             'label' => 'Example',
-            'text' => '/cuaca jakarta',
+            'text' => '/cuaca medan',
           ),
         ),
       ),
